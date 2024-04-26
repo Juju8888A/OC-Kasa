@@ -1,10 +1,24 @@
 import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Location from './pages/Location';
+import Error from './pages/Error';
 
 const App = () => {
-  return(
-    <div>
-      <h1>Kasa</h1>
-    </div>
+  return (
+    <BrowserRouter>
+      <Routes>
+        {/* Route vers la page d'accueil */}
+        <Route path="/" element={<Home />} />
+        {/* Route vers la page a propos */}
+        <Route path="/about" element={<About />} />
+        {/* Route vers une fiche de location précise */}
+        <Route path="/location" element={<Location />} />
+        {/* Route vers la page erreur 404 */}
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
