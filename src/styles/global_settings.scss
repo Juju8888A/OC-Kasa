@@ -18,6 +18,11 @@ $color-3: black;
 }
 // @include centerFlex
 
+@mixin marginGlobal {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
 * {
   padding: 0;
   margin: 0;

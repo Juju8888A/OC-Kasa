@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <header>
-      <div>
-        <h1>Kasa</h1>
+      <div className="navbar">
+        <img src="./logo_kasa.webp" alt="logo du site kasa"/>
         <nav>
           <ul>
             <li>

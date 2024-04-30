@@ -1,8 +1,23 @@
 header {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    @include marginGlobal;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
   a {
     color: $color-3;
+    font-size: 1.2rem;
   }
 }
+
 // navbar animation du surlignement
 .nav-active {
   position: relative;
