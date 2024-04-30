@@ -4,7 +4,7 @@ import Footer from '../components/Footer/Footer';
 
 const Error = () => {
   return(
-    <div>
+    <div className='error-page'>
         <Header />
         <h2>Page erreur 404</h2>
         <Footer />

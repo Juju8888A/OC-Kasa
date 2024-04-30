@@ -4,7 +4,7 @@ import Footer from '../components/Footer/Footer';
 
 const Location = () => {
   return(
-    <div>
+    <div className='location-page'>
         <Header />
         <h2>Page fiche de location</h2>
         <Footer />
