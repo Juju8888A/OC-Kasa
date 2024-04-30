@@ -1,0 +1,39 @@
+// font
+@font-face {
+  font-family: "inter";
+  src: url(../assets/fonts/Inter-Regular.ttf);
+}
+$font-1: inter, sans-serif;
+
+// variables
+$color-1: rgb(255, 96, 96);
+$color-2: white;
+$color-3: black;
+
+// test mixins
+@mixin centerFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// @include centerFlex
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-2;
+  min-height: 100vh;
+  font-family: $font-1;
+}
+
+li {
+  list-style: none;
+
+  a {
+    text-decoration: none;
+  }
+}
