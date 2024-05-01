@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <footer>
       <div>
-        <h3>Kasa</h3>
-        <p>c 2020 Kasa. All rights reserved</p>
+      <img src="./logo_kasa_white.webp" alt="logo du site kasa"/>
+        <p>© 2020 Kasa. All rights reserved</p>
       </div>
     </footer>
   );

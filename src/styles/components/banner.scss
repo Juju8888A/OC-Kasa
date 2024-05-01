@@ -1,3 +1,7 @@
+main {
+  @include maxWidth;
+}
+
 .banner-container {
   @include centerFlex;
   @include marginGlobal;
