@@ -1,0 +1,16 @@
+.banner-container {
+  @include centerFlex;
+  @include marginGlobal;
+  margin-top: 45px;
+  height: 220px;
+  background-color: #000000;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../assets/img/photo-banner-paysage.png) center/cover;
+  border-radius: 25px;
+
+  h1 {
+    color: $color-2;
+    font-size: 2.5rem;
+    word-spacing: 0.3rem;
+  }
+}
