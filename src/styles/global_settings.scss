@@ -9,6 +9,7 @@ $font-1: montserrat, sans-serif;
 $color-1: rgb(255, 96, 96);
 $color-2: white;
 $color-3: black;
+$color-4: rgba(246, 246, 246);
 
 // test mixins
 @mixin centerFlex {
@@ -23,6 +24,10 @@ $color-3: black;
   margin-right: 100px;
 }
 
+@mixin link {
+  text-decoration: none;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -32,6 +37,8 @@ $color-3: black;
 body {
   background-color: $color-2;
   min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
   font-family: $font-1;
 }
 
