@@ -1,15 +1,11 @@
-main {
-  @include maxWidth;
-}
-
-.banner-container {
+.banner-container-1 {
   @include centerFlex;
   @include marginGlobal;
   margin-top: 45px;
   height: 220px;
   background-color: #000000;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../assets/img/photo-banner-paysage.png) center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../assets/img/photo-banner-paysage-home.png) center/cover;
   border-radius: 25px;
   box-shadow: 0px 4px 4px 0px #00000040;
 
@@ -18,4 +14,16 @@ main {
     font-size: 2.5rem;
     word-spacing: 0.3rem;
   }
+}
+
+.banner-container-2 {
+  @include centerFlex;
+  @include marginGlobal;
+  margin-top: 45px;
+  height: 220px;
+  background-color: #000000;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../assets/img/photo-banner-paysage-about.png) center/cover;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px 0px #00000040;
 }

@@ -1,9 +1,9 @@
 import React from "react";
 
-const Banner = () => {
+const Banner = ({children}) => {
   return (
-    <div className="banner-container">
-        <h1>Chez vous, partout et ailleurs </h1>
+    <div>
+        {children}
     </div>
   );
 };

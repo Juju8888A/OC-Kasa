@@ -14,7 +14,7 @@ const App = () => {
         {/* Route vers la page a propos */}
         <Route path="/about" element={<About />} />
         {/* Route vers une fiche de location précise */}
-        <Route path="/location" element={<Location />} />
+        <Route path="/location/:id" element={<Location />} />
         {/* Route vers la page erreur 404 */}
         <Route path="*" element={<Error />} />
       </Routes>

@@ -9,7 +9,11 @@ const Home = () => {
     <div className='home-page'>
         <Header />
         <main>     
-          <Banner />     
+          <Banner>
+            <div className='banner-container-1'>
+            <h1>Chez vous, partout et ailleurs</h1>
+            </div>
+            </Banner>     
           <Card />
         </main>
         <Footer />

@@ -45,6 +45,10 @@ body {
   font-family: $font-1;
 }
 
+main {
+  @include maxWidth;
+}
+
 li {
   list-style: none;
 
