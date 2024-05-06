@@ -1,0 +1,27 @@
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 80px;
+  margin-top: 60px;
+  margin-bottom: 90px;
+
+  h2 {
+    font-size: 15rem;
+    color: $color-1;
+    padding: 0;
+  }
+
+  p {
+    font-size: 36px;
+    color: $color-1;
+  }
+
+  .accueil-link {
+    margin-top: 20px;
+    font-size: 18px;
+    color: $color-3;
+  }
+}
