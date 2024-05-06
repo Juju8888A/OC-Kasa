@@ -1,0 +1,29 @@
+.location-container {
+  margin-left: 100px;
+  margin-right: 100px;
+
+  .info-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .info-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+  }
+
+  .info-proprio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+  }
+
+  .name-proprio {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
