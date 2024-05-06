@@ -2,6 +2,9 @@ import React from 'react';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import Banner from '../components/Banner/Banner'
+import Collapse from '../components/Collapse/Collapse';
+
+
 
 const About = () => {
   return(
@@ -12,7 +15,7 @@ const About = () => {
             <div className='banner-container-2'>
             </div>
             </Banner> 
-        <h2>Page à propos</h2>
+          <Collapse />
         </main>
         <Footer />
     </div>
