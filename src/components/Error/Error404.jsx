@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Error404 = ({}) => {
+const Error404 = () => {
   return (
     <div className="error-container">
        <h2>404</h2>
