@@ -1,11 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import logoHeader from "../../assets/logos/logo_kasa.webp"
 
 const Header = () => {
   return (
     <header>
       <div className="navbar">
-        <img src="./logo_kasa.webp" alt="logo du site kasa"/>
+        <img src={logoHeader} alt="logo du site kasa"/>
         <nav>
           <ul>
             <li>
