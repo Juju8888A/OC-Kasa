@@ -21,14 +21,14 @@ const Carrousel = ({ images }) => {
   return (
     <div className="carrousel">
       <div className="image-carrousel">
-        {/* <img src={images[index]} alt={`Image de ${index}`} /> */}
+        <img src={images[index]} alt={`${index}`} />
         </div>
       <div className="btn-carrousel">
         <button onClick={previousImage}>
-          <img src={arrowLeft} alt={`Image ${index + 1}`} />
+          <img src={arrowLeft} alt={`${index + 1}`} />
         </button>
         <button onClick={nextImage}>
-          <img src={arrowRight} alt={`Image ${index + 1}`} />
+          <img src={arrowRight} alt={`${index + 1}`} />
         </button>
       </div>
       <div className="slide-number">{index + 1} / 2 </div>
