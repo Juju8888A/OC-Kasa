@@ -36,7 +36,7 @@ const Location = () => {
           <div className="info-container">
             <div className="info-location">
               <h1>{apartment.title}</h1>
-              <h2>Localisation</h2>
+              <h2>{apartment.location}</h2>
               <div>
                 <ul>
                   <li>Button</li>
@@ -54,8 +54,8 @@ const Location = () => {
             </div>
           </div>
           <div className="collapse-location">
-            <Collapse title="Description" content="" />
-            <Collapse title="Equipements" content="" />
+            <Collapse title="Description" content={apartment.description} />
+            <Collapse title="Equipements" content={<ul>{apartment.equipments.map((equipement, index) => <li key={index}>{equipement}</li>)}</ul>} />
           </div>
         </div>
       </main>

@@ -31,7 +31,7 @@ const Carrousel = ({ images }) => {
           <img src={arrowRight} alt={`${index + 1}`} />
         </button>
       </div>
-      <div className="slide-number">{index + 1} / 2 </div>
+      <div className="slide-number">{index + 1} / {images.length} </div>
 
     </div>
   );
