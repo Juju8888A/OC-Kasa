@@ -18,21 +18,28 @@ const Carrousel = ({ images }) => {
     );
   };
 
+  // si les images sont supérieures en nombre à 1, alors les fleches et le compteur s'affichent
+  const displayArrowsAndSlideNumber = images.length > 1;
+
+
   return (
     <div className="carrousel">
       <div className="image-carrousel">
         <img src={images[index]} alt={`${index}`} />
         </div>
-      <div className="btn-carrousel">
-        <button onClick={previousImage}>
-          <img src={arrowLeft} alt={`${index + 1}`} />
-        </button>
-        <button onClick={nextImage}>
-          <img src={arrowRight} alt={`${index + 1}`} />
-        </button>
-      </div>
-      <div className="slide-number">{index + 1} / {images.length} </div>
-
+        {displayArrowsAndSlideNumber && (
+        <div>
+          <div className="btn-carrousel">
+            <button onClick={previousImage}>
+              <img src={arrowLeft} alt={`${index + 1}`} />
+            </button>
+            <button onClick={nextImage}>
+              <img src={arrowRight} alt={`${index + 1}`} />
+            </button>
+          </div>
+          <div className="slide-number">{index + 1} / {images.length} </div>
+        </div>
+      )}
     </div>
   );
 };

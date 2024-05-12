@@ -39,14 +39,14 @@ const Location = () => {
               <h2>{apartment.location}</h2>
               <div>
                 <ul>
-                  <li>Button</li>
+                  <li>{apartment.tags.map((tag, index) => <li key={index}>{tag}</li>)}</li>
                 </ul>
               </div>
             </div>
             <div className="info-proprio">
               <div className="name-proprio">
-                <p>Nom</p>
-                <img src="" alt=""></img>
+                <p>{apartment.host.name}</p>
+                <img src={apartment.host.picture} alt={`photo de ` + apartment.host.name}></img>
               </div>
               <div className="stars">
                 <img src="" alt=""></img>
