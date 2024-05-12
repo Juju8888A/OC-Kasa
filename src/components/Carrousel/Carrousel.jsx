@@ -28,15 +28,17 @@ const Carrousel = ({ images }) => {
         <img src={images[index]} alt={`${index}`} />
         </div>
         {displayArrowsAndSlideNumber && (
-        <div>
-          <div className="btn-carrousel">
-            <button onClick={previousImage}>
+        <div className="btn-carrousel">
+          <div  className="btn-left">
+            <button onClick={previousImage} >
               <img src={arrowLeft} alt={`${index + 1}`} />
             </button>
-            <button onClick={nextImage}>
+          </div>
+          <div className="btn-right">
+            <button onClick={nextImage} >
               <img src={arrowRight} alt={`${index + 1}`} />
             </button>
-          </div>
+            </div>
           <div className="slide-number">{index + 1} / {images.length} </div>
         </div>
       )}

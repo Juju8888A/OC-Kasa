@@ -39,11 +39,9 @@ const Location = () => {
               <h2>{apartment.location}</h2>
               <div>
                 <ul>
-                  <li>
-                    {apartment.tags.map((tag, index) => (
-                      <li key={index}>{tag}</li>
-                    ))}
-                  </li>
+                  {apartment.tags.map((tag, index) => (
+                    <li key={index}>{tag}</li>
+                  ))}
                 </ul>
               </div>
             </div>
