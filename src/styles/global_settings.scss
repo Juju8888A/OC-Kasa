@@ -33,6 +33,14 @@ $color-4: rgba(246, 246, 246);
   margin: 0 auto;
 }
 
+@mixin margin20 {
+  margin: 20px 20px;
+}
+
+@mixin margin40 {
+  margin: 40px 40px;
+}
+
 * {
   padding: 0;
   margin: 0;

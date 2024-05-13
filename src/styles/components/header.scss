@@ -7,15 +7,42 @@ header {
     align-items: center;
     margin-top: 40px;
     @include marginGlobal;
+
+    @media (max-width: 1280px) {
+      @include margin40;
+    }
+
+    @media (max-width: 768px) {
+      @include margin20;
+    }
+
+    & img {
+      @media (max-width: 1280px) {
+        width: 180px;
+      }
+
+      @media (max-width: 768px) {
+        width: 145px;
+      }
+    }
   }
   ul {
     display: flex;
     flex-direction: row;
     gap: 50px;
+    @media (max-width: 768px) {
+      gap: 20px;
+    }
   }
   a {
     color: $color-3;
     font-size: 1.2rem;
+    @media (max-width: 1280px) {
+      font-size: 16px;
+    }
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 }
 
