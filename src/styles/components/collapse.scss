@@ -34,8 +34,10 @@
 
     .content {
       max-height: 0;
+      padding: 0 15px;
       overflow: hidden;
-      transition: all 0.3s cubic-bezier(0, 1, 0, 1);
+      transition: max-height 0.7s cubic-bezier(0, 1, 0, 1), padding 1s,
+        background 1.5s;
     }
 
     .content-show {
@@ -43,7 +45,7 @@
       padding: 15px;
       height: auto;
       max-height: 1000px;
-      transition: all 0.6s cubic-bezier(0, 1, 0, 1);
+      transition: max-height 0.7s cubic-bezier(0, 1, 0, 1), padding 0.8s;
     }
   }
 }
@@ -78,8 +80,10 @@
 
     .content {
       max-height: 0;
+      padding: 0 15px;
       overflow: hidden;
-      transition: all 0.3s cubic-bezier(0, 1, 0, 1);
+      transition: max-height 0.7s cubic-bezier(0, 1, 0, 1), padding 1s,
+        background 1.5s;
     }
 
     .content-show {
@@ -87,7 +91,7 @@
       padding: 15px;
       height: auto;
       max-height: 1000px;
-      transition: all 0.6s cubic-bezier(0, 1, 0, 1);
+      transition: max-height 0.7s cubic-bezier(0, 1, 0, 1), padding 0.8s;
     }
   }
 }
