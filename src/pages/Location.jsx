@@ -37,17 +37,26 @@ const Location = () => {
             <div className="info-location">
               <h1>{apartment.title}</h1>
               <h2>{apartment.location}</h2>
-              <div>
+              <div className="div-tag">
                 <ul>
                   {apartment.tags.map((tag, index) => (
-                    <li key={index}>{tag}</li>
+                    <li key={index} className="tag-button">
+                      {tag}
+                    </li>
                   ))}
                 </ul>
               </div>
             </div>
-            <div className="info-proprio">
+            <div className="info-proprio-rating">
               <div className="name-proprio">
-                <p>{apartment.host.name}</p>
+                <p>
+                  {apartment.host.name.split(" ").map((word, index) => (
+                    <span key={index}>
+                      {word}
+                      <br />
+                    </span>
+                  ))}
+                </p>
                 <img
                   src={apartment.host.picture}
                   alt={`photo de ` + apartment.host.name}

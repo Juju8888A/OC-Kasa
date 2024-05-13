@@ -25,7 +25,7 @@ const Carrousel = ({ images }) => {
   return (
     <div className="carrousel">
       <div className="image-carrousel">
-        <img src={images[index]} alt={`${index}`} />
+        <img src={images[index]} alt={`intérieur de la location ${index}`} />
         </div>
         {displayArrowsAndSlideNumber && (
         <div className="btn-carrousel">
