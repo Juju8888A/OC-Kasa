@@ -120,7 +120,7 @@
       max-height: 0;
       padding: 0 15px;
       overflow: hidden;
-      transition: max-height 0.7s cubic-bezier(0, 1, 0, 1), padding 1s,
+      transition: max-height 1s cubic-bezier(0, 1, 0, 1), padding 1s,
         background 1.5s;
     }
 
@@ -129,7 +129,7 @@
       padding: 15px;
       height: auto;
       max-height: 1000px;
-      transition: max-height 0.7s cubic-bezier(0, 1, 0, 1), padding 0.8s;
+      transition: max-height 0.8s, padding 0.8s, background 0.9s;
     }
   }
 }
