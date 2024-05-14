@@ -15,7 +15,7 @@ const Collapse = ({ title, content }) => {
           <div className="title" onClick={toggle}>
             <h3>{title}</h3>
             <img
-              src={isOpen ? arrowUp : arrowDown}
+              src={isOpen ? arrowDown : arrowUp}
               alt="fleche"
             />
           </div>
