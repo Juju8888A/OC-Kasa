@@ -28,7 +28,9 @@ const About = () => {
         <Collapse title="Sécurité" content={dataSecurite} />
         </div>
       </main>
+      <div className="footer-about">
       <Footer />
+      </div>
     </div>
   );
 };
