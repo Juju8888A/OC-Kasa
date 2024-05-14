@@ -37,3 +37,9 @@ footer {
     margin-top: 340px;
   }
 }
+
+.footer-location {
+  @media (max-width: 768px) {
+    margin-top: 170px;
+  }
+}

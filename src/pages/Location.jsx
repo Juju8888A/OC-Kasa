@@ -87,7 +87,9 @@ const Location = () => {
           </div>
         </div>
       </main>
+      <div className="footer-location">
       <Footer />
+      </div>
     </div>
   );
 };
