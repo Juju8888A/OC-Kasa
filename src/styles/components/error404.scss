@@ -8,20 +8,44 @@
   margin-top: 60px;
   margin-bottom: 150px;
 
+  @media (max-width: 768px) {
+    margin-top: 120px;
+  }
+
   h2 {
     font-size: 15rem;
     color: $color-1;
     padding: 0;
+
+    @media (max-width: 768px) {
+      font-size: 8rem;
+    }
   }
 
   p {
     font-size: 36px;
     color: $color-1;
+
+    @media (max-width: 1280px) {
+      margin-left: 40px;
+      margin-right: 40px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      @include margin40;
+    }
   }
 
   .accueil-link {
     margin-top: 20px;
     font-size: 18px;
     color: $color-3;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
   }
 }

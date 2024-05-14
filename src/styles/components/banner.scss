@@ -49,9 +49,11 @@
 
   @media (max-width: 1280px) {
     @include margin40;
+    height: 180px;
   }
 
   @media (max-width: 768px) {
     @include margin20;
+    height: 110px;
   }
 }
