@@ -1,23 +1,30 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Carrousel from "../components/Carrousel/Carrousel";
 import Collapse from "../components/Collapse/Collapse";
 import location from "../data/data-location.json";
-import Error from "./Error";
 import greyStar from "../assets/icones/grey_star.png";
 import redStar from "../assets/icones/red_star.png";
 
 const Location = () => {
   const { id } = useParams();
-  console.log({ id });
+  // console.log({ id });
+  const navigate = useNavigate();
 
   // je filtre les données pour afficher uniquement les informations de l'appartement correspondant à l'ID
   const apartment = location.find((element) => element.id === id);
 
+  useEffect(() => {
+    if (!apartment) {
+      navigate('/Error');
+    }
+  }, [apartment, navigate]);
+
   if (!apartment) {
-    return <Error />;
+    return null;
   }
 
   // je génère les 5 étoiles de notation
