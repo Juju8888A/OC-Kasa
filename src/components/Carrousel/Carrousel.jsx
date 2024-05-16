@@ -6,6 +6,7 @@ import { useState } from "react";
 const Carrousel = ({ images }) => {
   const [index, setIndex] = useState(0);
 
+  // fonction d'affichage précédent et suivant
   const previousImage = () => {
     setIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
@@ -13,8 +14,8 @@ const Carrousel = ({ images }) => {
   };
 
   const nextImage = () => {
-    setIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    setIndex((nextIndex) =>
+      nextIndex === images.length - 1 ? 0 : nextIndex + 1
     );
   };
 
@@ -25,20 +26,21 @@ const Carrousel = ({ images }) => {
   return (
     <div className="carrousel">
       <div className="image-carrousel">
-        <img src={images[index]} alt={`intérieur de la location ${index}`} />
+        <img src={images[index]} alt={`intérieur de l'appartement' ${index}`} />
         </div>
         {displayArrowsAndSlideNumber && (
         <div className="btn-carrousel">
           <div  className="btn-left">
             <button onClick={previousImage} >
-              <img src={arrowLeft} alt={`${index + 1}`} />
+              <img src={arrowLeft} alt="flèche précédente" />
             </button>
           </div>
           <div className="btn-right">
             <button onClick={nextImage} >
-              <img src={arrowRight} alt={`${index + 1}`} />
+              <img src={arrowRight} alt="flèche suivante" />
             </button>
             </div>
+            {/* compteur du carrousel */}
           <div className="slide-number">{index + 1} / {images.length} </div>
         </div>
       )}

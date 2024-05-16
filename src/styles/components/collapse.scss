@@ -73,7 +73,8 @@
       padding: 15px;
       height: auto;
       max-height: 1000px;
-      transition: max-height 0.7s cubic-bezier(0, 1, 0, 1), padding 0.8s;
+      transition: max-height 0.7s cubic-bezier(0, 1, 0, 1), padding 0.8s,
+        background 1s;
     }
   }
 }
