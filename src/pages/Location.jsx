@@ -19,7 +19,7 @@ const Location = () => {
 
   useEffect(() => {
     if (!apartment) {
-      navigate('/Error');
+      navigate('/error');
     }
   }, [apartment, navigate]);
 

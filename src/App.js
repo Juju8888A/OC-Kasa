@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Location from "./pages/Location";
 import Error from "./pages/Error";
+import RedirectToError from "./components/Error/RedirectError";
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
         {/* Route vers une fiche de location précise */}
         <Route path="/location/:id" element={<Location />} />
         {/* Route vers la page erreur 404 */}
-        <Route path="*" element={<Error />} />
+        <Route path="/error" element={<Error />} />
+        <Route path="*" element={<RedirectToError />} />
       </Routes>
     </BrowserRouter>
   );
