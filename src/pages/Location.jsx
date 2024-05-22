@@ -6,8 +6,8 @@ import Footer from "../components/Footer/Footer";
 import Carrousel from "../components/Carrousel/Carrousel";
 import Collapse from "../components/Collapse/Collapse";
 import location from "../data/data-location.json";
-import greyStar from "../assets/icones/grey_star.png";
-import redStar from "../assets/icones/red_star.png";
+import itemInactive from "../assets/icones/grey_star.png";
+import itemActive from "../assets/icones/red_star.png";
 
 const Location = () => {
   const { id } = useParams();
@@ -31,7 +31,7 @@ const Location = () => {
   const stars = [1, 2, 3, 4, 5];
   // je souhaite que ma fonction affiche les étoiles, rouges si true, grey si false
   const displayStars = (star) => {
-    return <img src={star ? redStar : greyStar} alt="étoile" />;
+    return <img src={star ? itemActive : itemInactive} alt="étoile" />;
   };
 
   return (
