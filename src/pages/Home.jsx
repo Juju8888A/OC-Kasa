@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import Banner from '../components/Banner/Banner';
-import Card from '../components/Card/Card';
+import Cards from '../components/Cards/Cards';
 
 const Home = () => {
   return(
@@ -14,7 +14,7 @@ const Home = () => {
             <h1>Chez vous, partout et ailleurs</h1>
             </div>
             </Banner>     
-          <Card />
+          <Cards />
         </main>
         <Footer />
     </div>

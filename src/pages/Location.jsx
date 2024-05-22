@@ -43,7 +43,7 @@ const Location = () => {
           <div className="info-container">
             <div className="info-location">
               <h1>{apartment.title}</h1>
-              <h2>{apartment.location}</h2>
+              <p>{apartment.location}</p>
               <div className="div-tag">
                 <ul>
                   {apartment.tags.map((tag, index) => (

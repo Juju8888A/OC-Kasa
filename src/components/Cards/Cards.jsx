@@ -4,7 +4,7 @@ import location from "../../data/data-location.json";
 
 const Card = () => {
   return (
-    <div className="card-container">
+    <div className="cards-container">
       {location.map((data) => {
         return (
           <figure className="location-card" key={data.id}>
