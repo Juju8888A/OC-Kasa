@@ -6,8 +6,11 @@ import Footer from "../components/Footer/Footer";
 import Carrousel from "../components/Carrousel/Carrousel";
 import Collapse from "../components/Collapse/Collapse";
 import location from "../data/data-location.json";
-import itemInactive from "../assets/icones/grey_star.png";
-import itemActive from "../assets/icones/red_star.png";
+import TitleLocation from "../components/Location/TitleLocation";
+import Localisation from "../components/Location/Localisation";
+import TagButton from "../components/Location/TagButton";
+import Owner from "../components/Location/Owner";
+import Rating from "../components/Location/Rating";
 
 const Location = () => {
   const { id } = useParams();
@@ -27,13 +30,6 @@ const Location = () => {
     return null;
   }
 
-  // je génère les 5 étoiles de notation
-  const stars = [1, 2, 3, 4, 5];
-  // je souhaite que ma fonction affiche les étoiles, rouges si true, grey si false
-  const displayStars = (star) => {
-    return <img src={star ? itemActive : itemInactive} alt="étoile" />;
-  };
-
   return (
     <div className="location-page">
       <Header />
@@ -42,41 +38,13 @@ const Location = () => {
           <Carrousel images={apartment.pictures} />
           <div className="info-container">
             <div className="info-location">
-              <h1>{apartment.title}</h1>
-              <p>{apartment.location}</p>
-              <div className="div-tag">
-                <ul>
-                  {apartment.tags.map((tag, index) => (
-                    <li key={index} className="tag-button">
-                      {tag}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <TitleLocation title={apartment.title}/>
+              <Localisation location={apartment.location} />
+              <TagButton key={apartment.id} tags={apartment.tags} />
             </div>
             <div className="info-proprio-rating">
-              <div className="name-proprio">
-                <p>
-                  {apartment.host.name.split(" ").map((word, index) => (
-                    <span key={index}>
-                      {word}
-                      <br />
-                    </span>
-                  ))}
-                </p>
-                <img
-                  src={apartment.host.picture}
-                  alt={`photo de ` + apartment.host.name}
-                ></img>
-              </div>
-              <div className="stars">
-                {/* génération des étoiles en fonction du rating de l'appartement, détermine si c'est l'étoile rouge ou grise qui doit apparaître */}
-                {stars.map((star, index) => (
-                  <span key={index}>
-                    {displayStars(star <= apartment.rating)}
-                  </span>
-                ))}
-              </div>
+              <Owner host={apartment.host.name} picture={apartment.host.picture}/>
+              <Rating ratingStars={apartment.rating} />
             </div>
           </div>
           <div className="collapse-location">
