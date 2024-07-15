@@ -3,6 +3,7 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Banner from "../components/Banner/Banner";
 import Collapse from "../components/Collapse/Collapse";
+import imageBannerAbout from "../assets/img/photo-banner-paysage-about.png"
 
 const About = () => {
   const dataFiabilite =
@@ -18,9 +19,7 @@ const About = () => {
     <div className="about-page">
       <Header />
       <main>
-        <Banner>
-          <div className="banner-container-2"></div>
-        </Banner>
+        <Banner image={imageBannerAbout}/>
         <div className="collapse-about">
         <Collapse title="Fiabilité" content={dataFiabilite} />
         <Collapse title="Respect" content={dataRespect} />

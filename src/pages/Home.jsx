@@ -3,17 +3,17 @@ import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import Banner from '../components/Banner/Banner';
 import Cards from '../components/Cards/Cards';
+import imageBannerHome from "../assets/img/photo-banner-paysage-home.png"
 
 const Home = () => {
+
+const titleBannerHome = "Chez vous, partout et ailleurs"
+
   return(
     <div className='home-page'>
         <Header />
         <main>     
-          <Banner>
-            <div className='banner-container-1'>
-            <h1>Chez vous, partout et ailleurs</h1>
-            </div>
-            </Banner>     
+          <Banner title={titleBannerHome} image={imageBannerHome}/>    
           <Cards />
         </main>
         <Footer />
