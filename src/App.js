@@ -7,7 +7,7 @@ import Error from "./pages/Error";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={"production" ? "/OC-Kasa" : "/"}>
       <Routes>
         {/* Route vers la page d'accueil */}
         <Route path="/" element={<Home />} />
@@ -24,3 +24,4 @@ const App = () => {
 };
 
 export default App;
+
